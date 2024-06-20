@@ -1,0 +1,11 @@
+<%- include('header'); -%>
+     <div>
+        <% for (i = 0 ; i < message.length ; i++) { %>
+            <div>
+                <p>username: <%=message[i].name%></p>
+            </div>
+            <a href="/update?id=<%=message[i].id%>">edit</a>
+            <a href="/delete?id=<%=message[i].id%>">delete</a>
+        <% } %>
+     </div>
+<%- include('footer'); -%>
